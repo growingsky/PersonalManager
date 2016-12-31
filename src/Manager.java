@@ -132,17 +132,6 @@ public class Manager {
         return employees;
     }
 
-    public String getAllEmployeesName() {
-        String name = "";
-        for (Employee i : getAllEmployess()) {
-            name = i.getName();
-        }
-        return name;
-    }
-
-    public Manager returnManager() {
-        return this;
-    }
 
     public void employeeDBpopulation() {
         employees.addAll(sourceFileManager.readFromFile());
